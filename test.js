@@ -56,7 +56,8 @@ function MeasureConnectionSpeed() {
         var speedKbps = (speedBps / 1024).toFixed(2);
         var speedMbps = (speedKbps / 1024).toFixed(2);
         ShowProgressMessage([
-            "Youw intewnet<br>speed iws<br><div class='speed'>" + Math.round(speedMbps) + "&nbsp;Mbps</div>"
+            // "Youw intewnet<br>speed iws<br><div class='speed'>" + Math.round(speedMbps) + "&nbsp;Mbps</div>"
+            "Youw intewnet<br>speed iws<br><div class='speed'>UwU&nbsp;Mbps</div>"
         ]);
     }
 }
