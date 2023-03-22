@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UwU</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./test.js"></script>
+    <style>
+        body {
+            /* background: #fff2f5; */
+            background-image: url(./assets/cloud-repeat.png);
+            font-family: 'Comic Neue', cursive;
+            background-size: cover;
+        }
+
+        .main {
+            width: 100%;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+        }
+
+        .logo {
+            max-width: 500px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        .logo>img {
+            width: 70%;
+        }
+
+        .sign-img-container {
+            max-width: 500px;
+            position: relative;
+        }
+
+        .sign-img-container>img {
+            width: 100%;
+        }
+
+        .sign-text {
+            position: absolute;
+            text-align: center;
+            font-size: 13px;
+            top: 30px;
+            left: 50px;
+            transform: rotate(-20deg);
+            text-align: center;
+        }
+
+        .speed {
+            color: #ffc7d0;
+            font-size: 35px;
+            margin-top: 3px;
+        }
+
+        .cloud-container>img {
+            width: 75%;
+            opacity: 1;
+        }
+
+        .cloud-container {
+            position: absolute;
+            width: 100%;
+            top: 86%;
+            left: 34%;
+        }
+
+        .footer {
+            margin-top: 180px;
+        }
+
+        #again-btn {
+            padding: 7px 10px;
+            font-size: 18px;
+            border: 2px solid;
+            border-radius: 12px;
+            font-family: 'Comic Neue', cursive;
+            background-color: #fff;
+            color: #000;
+        }
+
+        #again-btn:disabled {
+            background: #f4f4f4;
+            color: #c7c7c7;
+            border: 2px solid #c7c7c7;
+        }
+
+        #again-btn:disabled>i {
+            color: #c7c7c7;
+        }
+
+        #again-btn>i {
+            color: #ff859b;
+        }
+
+        img.bongo-gif {
+            width: 93px;
+            margin-top: 10px;
+            transform: rotate(-15deg);
+        }
+
+        @media screen and (max-width: 1050px) {
+            body {
+                background: #fff2f5;
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+
+            .sign-text {
+                position: absolute;
+                text-align: center;
+                font-size: 2.6vw;
+                top: 8%;
+                left: 8%;
+                transform: rotate(-20deg);
+                text-align: center;
+            }
+
+            .speed {
+                font-size: 8vw;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="logo"><img src="./assets/header-smol.png" alt=""></div>
+        <div class="sign-img-container">
+            <div class="sign-text">
+                <h1 id="progress"><div style="margin-top: 30px; margin-left: 30px; font-size: 30px;">UWU</div></h1>
+            </div>
+            <div class="cloud-container">
+                <img src="./assets/single-cloud.png" alt="">
+            </div>
+            <img src="./assets/waifu-board.png" alt="">
+        </div>
+        <div class="footer">
+            <button id="again-btn" onclick="InitiateSpeedDetection()"><i
+                    class="fa-solid fa-rotate-right"></i>&nbsp;Measuwe again</button>
+        </div>
+    </div>
+</body>
+
+</html>
