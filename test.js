@@ -58,8 +58,6 @@ if (window.addEventListener) {
     window.attachEvent('onload', InitiateSpeedDetection);
 }
 
-alert('Provides a ballpark, just a silly afternoon project');
-
 // function MeasureConnectionSpeed() {
 //     var startTime, endTime;
 //     var download = new Image();
