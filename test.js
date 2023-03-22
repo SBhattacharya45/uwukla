@@ -44,47 +44,10 @@ function InitiateSpeedDetection() {
         ]);
         document.getElementById("again-btn").disabled = false;
     }
-}
-
-// function InitiateSpeedDetection() {
-//     document.getElementById("again-btn").disabled = true;
-//     ShowProgressMessage("Measuwing...<br><img class='bongo-gif' src='./assets/bongo.gif' alt='mew'>");
-//     window.setTimeout(MeasureConnectionSpeed, 1);
-// };    
+}  
 
 if (window.addEventListener) {
     window.addEventListener('load', InitiateSpeedDetection, false);
 } else if (window.attachEvent) {
     window.attachEvent('onload', InitiateSpeedDetection);
 }
-
-// function MeasureConnectionSpeed() {
-//     var startTime, endTime;
-//     var download = new Image();
-//     download.onload = function () {
-//         endTime = (new Date()).getTime();
-//         showResults();
-//         document.getElementById("again-btn").disabled = false;
-//     }
-    
-//     download.onerror = function (err, msg) {
-//         ShowProgressMessage("Error Measuring");
-//         document.getElementById("again-btn").disabled = false;
-//     }
-    
-//     startTime = (new Date()).getTime();
-//     var cacheBuster = "?nnn=" + startTime;
-//     download.src = imageAddr + cacheBuster;
-    
-//     function showResults() {
-//         var timeDuration = (endTime - startTime) / 1000;
-// 				var loadedBits = downloadSize * 8;
-//         var bps = (loadedBits / timeDuration).toFixed(2);
-//         var speedInKbps = (bps / 1024).toFixed(2);
-//         var speedInMbps = (speedInKbps / 1024).toFixed(2);
-//         ShowProgressMessage([
-//             "Youw intewnet<br>speed iws<br><div class='speed'>" + Math.round(speedInMbps) + "&nbsp;Mbps</div>"
-//             // "Youw intewnet<br>speed iws<br><div class='speed'>UwU&nbsp;Mbps</div>"
-//         ]);
-//     }
-// }
